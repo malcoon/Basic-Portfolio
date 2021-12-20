@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    overflow-x: hidden;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    font-family: 'Karla', sans-serif;
+}
+
+:root {
+    --white: #FFFFFF;
+    --gray-1: #B3B3B3;
+    --gray-2: #808080;
+    --ruby-1: #D8334A;
+    --ruby-2: #BF263C;
+    --teal-1: #A0CECB;
+    --teal-2: #7DB1B1;
+    --plum-1: #8067B7;
+    --plum-2: #6A50A7;
+    --acqua-1: #4FC1E9;
+    --acqua-2: #3BAFDA;
+    --charcoal-2: #17161D;
+    --charcoal-1: #131219;
+    --pink-rose-1: #EC87E0;
+    --pink-rose-2: #D770AD;
+    --light-gray-1: #F5F7FA;
+    --light-gray-2: #E6E9ED;
+    --sun-flower-1: #FFCE54;
+    --sun-flower-2: #F6BB42;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    background-color: var(--charcoal-1)
+}
+
+/*--- Content ---*/
+.content {
+    display: flex;
+    padding: 2rem 6%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*--- Header ---*/
+
+/*--- avatar ---*/
+header .avatar {
+    width: 140px;
+    height: 140px;
+    margin: 2rem auto 1rem auto;
+}
+
+    header .avatar img {
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+        border-radius: 100%;
+        border: 4px solid var(--sun-flower-2);
+    }
+
+        header .avatar img:hover {
+            box-shadow: 0 6px 6px rgba(88, 88, 88, 0.1);
+        }
+
+/*--- name ---*/
+header .about .name {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: var(--light-gray-1);
+}
+
+header .about .description {
+    line-height: 1.5rem;
+    color: var(--gray-2);
+}
+
+/*--- Section ---*/
+
+/*--- column ---*/
+section .column {
+    padding: 4rem 0 1rem 0;
+    max-width: 60rem;
+}
+
+    section .column h1 {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+        color: var(--light-gray-2);
+    }
+
+        section .column h1:after {
+            content: '';
+            width: 4rem;
+            height: 2px;
+            position: absolute;
+            margin-top: 2.5rem;
+            left: calc(50% - 2rem);
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+    section .column a {
+        width: 55rem;
+        height: 60px;
+        display: block;
+        margin: 1rem 0;
+        font-weight: 600;
+        max-height: 600px;
+        line-height: 60px;
+        border-radius: 4px;
+        color: var(--light-gray-1);
+        background-color: var(--charcoal-2);
+    }
+
+    section .column a:hover {
+        color: var(--light-gray-2);
+        text-shadow: 0 1px 0 var(--gray-2);
+        background-color: var(--sun-flower-2);
+    }
+
+section .column .option {
+    color: var(--charcoal-1);
+}
+
+    section .column .option:hover {
+        color: var(--charcoal-2);
+    }
+
+    section .column .option i {
+        display: flex;
+        margin-right: 1rem;
+        margin-top: -2.3rem;
+        justify-content: flex-end;
+    }
+
+section .column-intro {
+    width: 55rem;
+    display: flex;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    margin: 1rem 0 0 0;
+    justify-content: center;
+    color: var(--light-gray-1);
+}
+
+    section .column-intro h1 {
+        margin-bottom: 2rem;
+        color: var(--sun-flower-2);
+    }
+
+    section .column-intro h1:after {
+        content: '';
+        width: 4rem;
+        height: 2px;
+        position: absolute;
+        margin-top: 2.5rem;
+        left: calc(50% - 2rem);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+section .column-intro .projects {
+    gap: 1rem;
+    width: 55rem;
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-around;
+}
+
+    .projects .project img {
+        border-radius: 4px;
+    }
+
+    .projects .project h2 {
+        padding: 1rem;
+        font-size: 1.3rem;
+        color: var(--sun-flower-2);
+    }
+
+    .projects .project p {
+        padding: 1rem .6rem;
+        font-size: 1rem;
+        max-width: 24rem;
+        color: var(--gray-1);
+    }
+
+    .projects .project a {
+        display: flex;
+        padding: .5rem;
+        overflow: hidden;
+        font-weight: 600;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        color: var(--charcoal-1);
+        background-color: var(--light-gray-1);
+    }
+
+        .projects .project a:hover {
+            background-color: var(--sun-flower-2);
+        }
+
+        .projects .project a i {
+            font-size: .8rem;
+            margin-top: .2rem;
+            margin-left: .3rem;
+            transform: rotate(-45deg);
+        }
+
+.showmore {
+    font-weight: 600;
+    border-radius: 4px;
+    margin: 1rem 0 0 0;
+    padding: .5rem 1.5rem;
+    color: var(--light-gray-1);
+    background-color: var(--charcoal-2);
+}
+
+    .showmore:hover {
+        font-weight: 600;
+        border-radius: 4px;
+        margin: 1rem 0 0 0;
+        padding: .5rem 1.5rem;
+        color: var(--charcoal-2);
+        background-color: var(--sun-flower-2);
+    }
+
+/*--- column-1 ---*/
+section .column-1 {
+    padding: 4rem 0 1rem 0;
+    max-width: 60rem;
+}
+
+    section .column-1 h1 {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+        color: var(--light-gray-2);
+    }
+
+        section .column-1 h1:after {
+            content: '';
+            width: 4rem;
+            height: 2px;
+            position: absolute;
+            margin-top: 2.5rem;
+            left: calc(50% - 2rem);
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+section .column-1 [insta], 
+section .column-1 [twitter], 
+section .column-1 [discord], 
+section .column-1 [tiktok],
+section .column-1 [github], 
+section .column-1 [yt], 
+section .column-1 [facebook], 
+section .column-1 [twitch] {
+    width: 55rem;
+    height: 60px;
+    display: block;
+    margin: .5rem 0;
+    font-weight: 600;
+    line-height: 60px;
+    border-radius: 4px;
+    overflow: hidden;
+    color: var(--light-gray-1);
+    background-color: var(--charcoal-2);
+}
+
+section .column-1 [insta]:before, 
+section .column-1 [twitter]:before, 
+section .column-1 [discord]:before, 
+section .column-1 [tiktok]:before,
+section .column-1 [github]:before, 
+section .column-1 [yt]:before, 
+section .column-1 [facebook]:before, 
+section .column-1 [twitch]:before {
+    opacity: .5;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    font-size: 6rem;
+    position: relative;
+    margin-left: -10rem;
+    margin-bottom: -3.1rem;
+    transform: rotate(-5deg);
+    font-family: 'FontAwesome';
+    justify-content: flex-start;
+    transition: .2s ease-in-out;
+}
+
+    section .column-1 [insta]:before {
+        content: '\f16d';
+    }
+        
+    section .column-1 [twitter]:before {
+        content: '\f099';
+    }
+
+    section .column-1 [discord]:before {
+        content: '\f392';
+    }
+
+    section .column-1 [tiktok]:before {
+        content: '\e07b';
+    }
+
+    section .column-1 [github]:before {
+        content: '\f09b';
+    }
+
+    section .column-1 [yt]:before {
+        content: '\f167';
+    }
+
+    section .column-1 [facebook]:before {
+        content: '\f39e';
+    }
+
+    section .column-1 [twitch]:before {
+        content: '\f1e8';
+    }
+        
+section .column-1 [insta]:hover:before,
+section .column-1 [twitter]:hover:before,
+section .column-1 [discord]:hover:before,
+section .column-1 [tiktok]:hover:before,
+section .column-1 [github]:hover:before,
+section .column-1 [yt]:hover:before,
+section .column-1 [facebook]:hover:before,
+section .column-1 [twitch]:hover:before {
+    margin-left: 1rem;
+    color: var(--light-gray-1);
+}
+
+    section .column-1 a:hover {
+        transition: .2s ease-in;
+        color: var(--charcoal-1);
+        background-color: var(--sun-flower-2);
+    }
+
+/*--- label ---*/
+
+section .column-2  {
+    width: 55rem;
+    margin: 1rem 0;
+    font-weight: 600;
+    line-height: 60px;
+    border-radius: 4px;
+    padding: 2.5rem 0 1rem 0;
+    color: var(--charcoal-1);
+    background-color: var(--light-gray-1);
+}
+
+/*--- form ---*/
+form {
+    padding: 0 2rem;
+    margin: -1rem 0 0 0;
+}
+
+    form input {
+        width: 100%;
+        display: flex;
+        margin: 1rem 0;
+        font-size: 1rem;
+        flex-wrap: wrap;
+        border-radius: 4px;
+        padding: 1rem 1rem;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--light-gray-2);
+        background-color: var(--light-gray-2);
+    }
+
+    form input.btn {
+        cursor: pointer;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--light-gray-1);
+        border: 1px solid var(--charcoal-1);
+        background-color: var(--charcoal-1);
+    }
+
+        form input.btn:hover {
+            cursor: pointer;
+            color: var(--charcoal-2);
+            border: 1px solid var(--sun-flower-2);
+            background-color: var(--sun-flower-2);
+        }
+
+    form textarea {
+        width: 100%;
+        resize: none;
+        display: flex;
+        margin: 1rem 0;
+        font-size: 1rem;
+        border-radius: 4px;
+        padding: 1rem 1rem;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--light-gray-2);
+        background-color: var(--light-gray-2);
+    }
+
+/*--- Footer ---*/
+footer {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem 0 0 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+    footer p {
+        font-weight: 600;
+        color: var(--light-gray-1);
+    }
+
+    footer p a {
+        font-weight: 600;
+        color: var(--light-gray-1);
+    }
+
+        footer p a:hover {
+            color: var(--sun-flower-2);
+        }
+
+@media only screen and (max-width: 768px) {
+    section .column a, section .column-intro, section .column .label, section .column-2 {
+        width: 45rem;
+    }
+
+section .column-1 [insta], 
+section .column-1 [twitter], 
+section .column-1 [discord], 
+section .column-1 [tiktok],
+section .column-1 [github], 
+section .column-1 [yt], 
+section .column-1 [facebook], 
+section .column-1 [twitch] {
+    width: 45rem;
+}
+
+section .column-intro .projects {
+    width: 45rem;
+    flex-direction: column;
+}
+
+    .projects .project h2 {
+        font-size: 2rem;
+    }
+
+    .projects .project a {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    section .column a, section .column-intro, section .column .label, section .column-2 {
+        width: 35rem;
+    }
+
+section .column-1 [insta], 
+section .column-1 [twitter], 
+section .column-1 [discord], 
+section .column-1 [tiktok],
+section .column-1 [github], 
+section .column-1 [yt], 
+section .column-1 [facebook], 
+section .column-1 [twitch] {
+    width: 35rem;
+}
+}
+
+@media only screen and (max-width: 375px) {
+    header .about .name {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    section .column a {
+        width: 24rem;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    section .column .label, section .column-2 {
+        width: 22rem;
+    }
+
+    .label {
+        padding: 1rem 0;
+    }
+
+section .column-1 [insta], 
+section .column-1 [twitter], 
+section .column-1 [discord], 
+section .column-1 [tiktok],
+section .column-1 [github], 
+section .column-1 [yt], 
+section .column-1 [facebook], 
+section .column-1 [twitch] {
+    width: 22rem;
+}
+
+section .column-intro {
+    width: 24rem;
+}
+
+.projects .project h2 {
+    font-size: 1.6rem;
+}
+
+.projects .project a {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+}
