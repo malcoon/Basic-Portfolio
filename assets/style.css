@@ -453,16 +453,16 @@ section .column-1 [twitch] {
 }
 
 section .column-intro .projects {
-    width: 45rem;
+    width: 40rem;
     flex-direction: column;
 }
 
     .projects .project h2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .projects .project a {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         margin-bottom: 1rem;
     }
 
@@ -483,6 +483,50 @@ section .column-1 [facebook],
 section .column-1 [twitch] {
     width: 35rem;
 }
+
+}
+
+@media only screen and (max-width: 425px) {
+    section .column a, section .column-intro, section .column .label, section .column-2 {
+        width: 24rem;
+    }
+
+section .column-1 [insta], 
+section .column-1 [twitter], 
+section .column-1 [discord], 
+section .column-1 [tiktok],
+section .column-1 [github], 
+section .column-1 [yt], 
+section .column-1 [facebook], 
+section .column-1 [twitch] {
+    width: 24rem;
+    height: 50px;
+    margin: .3rem 0;
+    font-size: .9rem;
+    line-height: 50px;
+}
+
+.projects .project h2 {
+    font-size: 1.2rem;
+}
+
+.projects .project a {
+    font-size: 1rem;
+}
+
+form {
+    padding: 0 1rem;
+}
+
+form input, form textarea {
+    padding: .6rem;
+    font-size: .9rem;
+}
+
+form input.btn {
+    font-size: .8rem;
+}
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -491,13 +535,7 @@ section .column-1 [twitch] {
         margin-bottom: .5rem;
     }
 
-    section .column a {
-        width: 24rem;
-        height: 50px;
-        line-height: 50px;
-    }
-
-    section .column .label, section .column-2 {
+    section .column a, section .column-intro, section .column .label, section .column-2 {
         width: 22rem;
     }
 
@@ -516,17 +554,73 @@ section .column-1 [twitch] {
     width: 22rem;
 }
 
-section .column-intro {
-    width: 24rem;
-}
-
 .projects .project h2 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .projects .project a {
+    font-size: 1rem;
+}
+
+form {
+    padding: 0 1rem;
+}
+
+form input, form textarea {
+    padding: .6rem;
+    font-size: .9rem;
+}
+
+form input.btn {
+    font-size: .8rem;
+}
+
+}
+
+@media only screen and (max-width: 320px) {
+    header .about .name {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    section .column a, section .column-intro, section .column .label, section .column-2 {
+        width: 19rem;
+    }
+
+    .label {
+        padding: 1rem 0;
+    }
+
+section .column-1 [insta], 
+section .column-1 [twitter], 
+section .column-1 [discord], 
+section .column-1 [tiktok],
+section .column-1 [github], 
+section .column-1 [yt], 
+section .column-1 [facebook], 
+section .column-1 [twitch] {
+    width: 19rem;
+}
+
+.projects .project h2 {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+}
+
+.projects .project a {
+    font-size: 1rem;
+}
+
+form {
+    padding: 0 1rem;
+}
+
+form input, form textarea {
+    padding: .6rem;
+    font-size: .9rem;
+}
+
+form input.btn {
+    font-size: .8rem;
 }
 
 }
